@@ -1,0 +1,824 @@
+*{box-sizing: border-box;}
+@media only screen and (min-width:900px){
+.header{
+  margin-top: -30px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 41, 83, 0.7);
+}
+h1{
+  text-align: center;
+    font-family:"engravers mt";
+    color: white;
+    font-size: 3em;
+}
+h2{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: -15px;
+}
+.subHeader{
+  width: 100%;
+  height:650px;
+  /* border: solid red; */
+}
+.subHeaderL{
+  float:left;
+  margin-top: 50px;
+  /* border: solid blue; */
+  width:50%;
+  height: 550px;
+}
+.header img{
+  border-left: solid rgba(0, 41, 83, 0.7);
+  border-bottom: solid rgba(0, 41, 83, 0.7);
+  border-top: solid rgba(0, 41, 83, 0.7);
+  float: left;
+  width: 150px;
+  height: 100px;
+}
+.subHeaderR{
+  float:left;
+  width:50%;
+  height: 550px;
+}
+
+.booking{
+  /* margin-top: -20px; */
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  /* border: solid yellow; */
+}
+.booking p{
+  margin-bottom: 35px;
+  font-size: 1.2em;
+}
+.design{
+  margin-top: 0px;
+
+}
+.design a{
+box-shadow: 1px 0px 5px 0.5px black;
+text-decoration: none;
+font-size: 2em;
+font-weight: bolder;
+border-radius: 5px;
+text-align: center;
+background-color: lightgray;
+color:rgba(0, 41, 83, 0.7) ;
+padding:30px 20px;
+margin-bottom: 50px;
+}
+.design a:hover{
+  color: white;
+  background-color: orange;
+}
+.rel{
+  position: relative;
+  width: 100%;
+  height: 420px;
+  /* border: solid red; */
+}
+.pic1{
+  /* border: solid green; */
+  width: 100%;
+  height: 300px;
+  /* margin-top : -20px; */
+}
+
+.services{
+  margin-top: 50px;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 30px;
+
+}
+.services1{
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+    color: orange;
+    margin-left: 20px;
+}
+.slideContainer{
+  margin-top: 45px;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  margin-left:auto;
+  margin-right: auto;
+  box-shadow: -1px -1px 3px 0.2px gray;
+}
+.slideContainer:hover{
+    box-shadow: 0px -1px 10px 0.2px black;
+}
+.slideWrapper{
+  overflow:hidden;
+  width: 300%;
+  height: 100%;
+    position: relative;
+  animation: slideshow 8s infinite;
+}
+.slide{
+      width:33.333%;
+      height:100%;
+      float:left;
+        position: relative;
+      }
+      .slide:nth-child(1) img{
+      width:100%;
+      height: 100%;
+      }
+      .slide:nth-child(2) img{
+      width:100%;
+      height: 100%;
+      }
+      .slide:nth-child(3) img{
+      width:100%;
+      height: 100%;
+      }
+      @keyframes slideshow {
+      0%{margin-left: 0%;}
+      25%{margin-left: 0%;}
+      35%{margin-left: -100%;}
+      55%{margin-left: -100%;}
+      65%{margin-left:-200%;}
+      85%{margin-left: -200%;}
+      }
+.footer{
+  border: solid white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-shadow: -3px -2px 10px gray;
+  height:300px;
+  background-color:white;
+}
+.foot1{
+  width: 100%;
+  height: 70%;
+}
+.foot1a{
+  float: left;
+  text-align: center;
+  width:50%;
+  height:200px;
+}
+.foot1a p:nth-child(1){
+font-weight: bolder;
+font-size: 1.5em;
+color: rgba(0, 41, 83, 0.7);
+padding: 15px 5px;
+}
+.foot1a p:nth-child(2){
+font-weight: bolder;
+font-size: 1em;
+color: rgba(0, 41, 83, 0.7);
+}
+.foot1a p:nth-child(3){
+font-weight: bolder;
+font-size: 1em;
+color: rgba(0, 41, 83, 0.7);
+}
+.foot1b{
+  float: left;
+  text-align: center;
+  width:50%;
+  height:200px;
+}
+
+.foot1b p:nth-child(1){
+font-weight: bolder;
+font-size: 1.5em;
+color: rgba(0, 41, 83, 0.7);
+padding: 15px 5px;
+}
+.foot1b p:nth-child(2){
+font-weight: bolder;
+font-size: 1em;
+color: rgba(0, 41, 83, 0.7);
+}
+.foot1b p:nth-child(3){
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: rgba(0, 41, 83, 0.7);
+}
+.foot1b a{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: orange;
+  font-weight: bolder;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.foot1 a:hover{
+  color:white;
+  background-color: gray;
+  box-shadow: 0px -2px 6px black;
+  padding: 10px 15px;
+}
+
+.foot2{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.foot2 a{
+  text-decoration: none;
+}
+.foot2 img{
+  width: 70px;
+  height:70px;
+  margin-right: 3em;
+  margin-left: 3em;
+}
+.copyright{
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+fieldset{
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formm{
+  margin-top: 50px;
+}
+h4{
+  text-align: center;
+}
+.form-group{
+  width: 80%;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mytext{
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: blue;
+}
+.in{
+  width: 100%;
+  height: 40px;
+}
+.group{
+  width: 100%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.form-submit{
+  text-align: center;
+  float: left;
+  /* margin-left:50px; */
+  width:33%;
+  height: 50px;
+  margin-top: 20px;
+}
+.textSty{
+  color: white;
+  background-color: rgba(0, 41, 83, 0.7);
+  font-weight: bold;
+  padding: 10px 15px;
+  width: 150px;
+  height: 50px;
+}
+}
+@media only screen and (min-width:451px) and (max-width: 899px){
+  .header{
+    margin-top: -30px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 41, 83, 0.7);
+  }
+  h1{
+    text-align: center;
+      font-family:"engravers mt";
+      color: white;
+      margin-top: 50px;
+      font-size: 1.5em;
+  }
+  h2{
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: -5px;
+  }
+  .subHeader{
+    width: 100%;
+    height:300px;
+  }
+  .subHeaderL{
+    float:left;
+    margin-top: 10px;
+    /* border: solid blue; */
+    width:50%;
+    height: 250px;
+  }
+  .header img{
+    border-left: solid rgba(0, 41, 83, 0.7);
+    border-bottom: solid rgba(0, 41, 83, 0.7);
+    border-top: solid rgba(0, 41, 83, 0.7);
+    float: left;
+    width: 90px;
+    height: 70px;
+  }
+  .subHeaderR{
+    margin-top: 20px;
+    float:left;
+    width:50%;
+    height: 280px;
+  }
+
+  .booking{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+  }
+  .booking p{
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+  .design{
+    margin-top: 0px;
+    font-size: 1.2em;
+
+  }
+  .design a{
+  box-shadow: 1px 0px 5px 0.5px black;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-weight: bolder;
+  border-radius: 5px;
+  text-align: center;
+  background-color: lightgray;
+  color:rgba(0, 41, 83, 0.7) ;
+  padding:10px 20px;
+  margin-bottom: 10px;
+  }
+  .design a:hover{
+    color: white;
+    background-color: orange;
+  }
+  .rel{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    /* border: solid red; */
+  }
+  .pic1{
+    /* border: solid green; */
+    width: 100%;
+    height: 300px;
+    /* margin-top : -20px; */
+  }
+
+  .services{
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .services1{
+    margin-top: 2px;
+    font-size: 0.6em;
+    font-weight: bold;
+    text-align: center;
+      color: orange;
+  }
+  .slideContainer{
+    margin-top: 25px;
+    overflow: hidden;
+    width: 215px;
+    height: 240px;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow: -1px -1px 3px 0.2px gray;
+  }
+  .slideContainer:hover{
+      box-shadow: 0px -1px 10px 0.2px black;
+  }
+  .slideWrapper{
+    overflow:hidden;
+    width: 300%;
+    height: 100%;
+      position: relative;
+    animation: slideshow 8s infinite;
+  }
+  .slide{
+        width:33.333%;
+        height:100%;
+        float:left;
+          position: relative;
+        }
+        .slide:nth-child(1) img{
+        width:100%;
+        height: 100%;
+        }
+        .slide:nth-child(2) img{
+        width:100%;
+        height: 100%;
+        }
+        .slide:nth-child(3) img{
+        width:100%;
+        height: 100%;
+        }
+        @keyframes slideshow {
+        0%{margin-left: 0%;}
+        25%{margin-left: 0%;}
+        35%{margin-left: -100%;}
+        55%{margin-left: -100%;}
+        65%{margin-left:-200%;}
+        85%{margin-left: -200%;}
+        }
+  .footer{
+    border: white;
+    float: left;
+    width: 100%;
+    box-shadow: -3px -2px 10px gray;
+    height:180px;
+  }
+
+  .foot1a{
+    float: left;
+    text-align: center;
+    width:50%;
+    height:100px;
+  }
+  .foot1a p{
+  font-weight: bolder;
+  font-size: 0.8em;
+  color: rgba(0, 41, 83, 0.7);
+  padding: 5px 5px;
+}
+  .foot1b{
+    float: left;
+    text-align: center;
+    width:50%;
+    height:100px;
+  }
+
+  .foot1b p{
+  font-weight: bolder;
+  font-size: 0.8em;
+  color: rgba(0, 41, 83, 0.7);
+  padding: 5px 5px;
+  }
+
+  .foot1b a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: orange;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px 5px
+  }
+  .foot1b a:hover{
+    color:white;
+    background-color: gray;
+    box-shadow: 0px -2px 6px black;
+    padding: 5px 5px;
+  }
+
+  .foot2{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  .foot2 a{
+    text-decoration: none;
+  }
+  .foot2 img{
+    margin-top: 15px;
+    width: 30px;
+    height:30px;
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+  .copyright{
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: bold;
+  }
+  fieldset{
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formm{
+    margin-top: 50px;
+  }
+  h4{
+    text-align: center;
+  }
+  .form-group{
+    width: 80%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mytext{
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: blue;
+  }
+  .in{
+    width: 100%;
+    height: 40px;
+  }
+  .group{
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .form-submit{
+    text-align: center;
+    float: left;
+    /* margin-left:50px; */
+    width:33%;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .textSty{
+    color: white;
+    background-color: rgba(0, 41, 83, 0.7);
+    font-weight: bold;
+    padding: 10px 15px;
+    width: 150px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width:450px){
+  .header{
+    margin-top: -30px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 41, 83, 0.7);
+  }
+  h1{
+    text-align: center;
+      font-family:"engravers mt";
+      color: white;
+      margin-top: 50px;
+      font-size: 1.2em;
+  }
+  h2{
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: -5px;
+  }
+  .subHeader{
+    width: 100%;
+    height:250px;
+  }
+  .subHeaderL{
+    float:left;
+    margin-top: 10px;
+    /* border: solid blue; */
+    width:50%;
+    height: 250px;
+  }
+  .header img{
+    border-left: solid rgba(0, 41, 83, 0.7);
+    border-bottom: solid rgba(0, 41, 83, 0.7);
+    border-top: solid rgba(0, 41, 83, 0.7);
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+  .subHeaderR{
+    float:left;
+    width:50%;
+    height: 250px;
+  }
+
+  .booking{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+  }
+  .booking p{
+    margin-bottom: 20px;
+    font-size: 0.6em;
+  }
+  .design{
+    margin-top: 0px;
+    font-size: 1em;
+
+  }
+  .design a{
+  box-shadow: 1px 0px 5px 0.5px black;
+  text-decoration: none;
+  font-size: 0.7em;
+  font-weight: bolder;
+  border-radius: 5px;
+  text-align: center;
+  background-color: lightgray;
+  color:rgba(0, 41, 83, 0.7) ;
+  padding:10px 20px;
+  margin-bottom: 10px;
+  }
+  .design a:hover{
+    color: white;
+    background-color: orange;
+  }
+  .rel{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    /* border: solid red; */
+  }
+  .pic1{
+    /* border: solid green; */
+    width: 100%;
+    height: 300px;
+    /* margin-top : -20px; */
+  }
+
+  .services{
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .services1{
+    margin-top: 2px;
+    font-size: 0.45em;
+    font-weight: bold;
+    text-align: center;
+      color: orange;
+  }
+  .slideContainer{
+    margin-top: 25px;
+    overflow: hidden;
+    width: 215px;
+    height: 200px;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow: -1px -1px 3px 0.2px gray;
+  }
+  .slideContainer:hover{
+      box-shadow: 0px -1px 10px 0.2px black;
+  }
+  .slideWrapper{
+    overflow:hidden;
+    width: 300%;
+    height: 100%;
+      position: relative;
+    animation: slideshow 8s infinite;
+  }
+  .slide{
+        width:33.333%;
+        height:100%;
+        float:left;
+          position: relative;
+        }
+        .slide:nth-child(1) img{
+        width:100%;
+        height: 100%;
+        }
+        .slide:nth-child(2) img{
+        width:100%;
+        height: 100%;
+        }
+        .slide:nth-child(3) img{
+        width:100%;
+        height: 100%;
+        }
+        @keyframes slideshow {
+        0%{margin-left: 0%;}
+        25%{margin-left: 0%;}
+        35%{margin-left: -100%;}
+        55%{margin-left: -100%;}
+        65%{margin-left:-200%;}
+        85%{margin-left: -200%;}
+        }
+  .footer{
+    border: white;
+    float: left;
+    width: 100%;
+    box-shadow: -3px -2px 10px gray;
+    height:170px;
+  }
+
+  .foot1a{
+    float: left;
+    text-align: center;
+    width:50%;
+    height:100px;
+  }
+  .foot1a p{
+  font-weight: bolder;
+  font-size: 0.5em;
+  color: rgba(0, 41, 83, 0.7);
+  padding: 5px 5px;
+}
+  .foot1b{
+    float: left;
+    text-align: center;
+    width:50%;
+    height:100px;
+  }
+
+  .foot1b p{
+  font-weight: bolder;
+  font-size: 0.5em;
+  color: rgba(0, 41, 83, 0.7);
+  padding: 5px 5px;
+  }
+
+  .foot1b a{
+    text-decoration: none;
+    font-size: 0.5em;
+    color: orange;
+    font-weight: bolder;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px 5px
+  }
+  .foot1b a:hover{
+    color:white;
+    background-color: gray;
+    box-shadow: 0px -2px 6px black;
+    padding: 5px 5px;
+  }
+
+  .foot2{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  .foot2 a{
+    text-decoration: none;
+  }
+  .foot2 img{
+    width: 30px;
+    height:30px;
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+  .copyright{
+    padding: 5px 5px;
+    font-size: 0.5em;
+    text-align: center;
+    font-weight: bold;
+  }
+  fieldset{
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formm{
+    margin-top: 50px;
+  }
+  h4{
+    text-align: center;
+  }
+  .form-group{
+    width: 80%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mytext{
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: blue;
+  }
+  .in{
+    width: 100%;
+    height: 40px;
+  }
+  .group{
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .form-submit{
+    text-align: center;
+    float: left;
+    /* margin-left:50px; */
+    width:33%;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .textSty{
+    color: white;
+    background-color: rgba(0, 41, 83, 0.7);
+    font-weight: bold;
+    padding: 10px 15px;
+    width: 150px;
+    height: 50px;
+  }
+
+}

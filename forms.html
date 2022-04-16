@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="formm">
+    <h2>APPOINTMENT FORM</h2>
+  </div>
+    <form id="paymentForm">
+        <fieldset style="width:60%;">
+  <div class="form-group">
+    <label for="email" class="mytext">Email Address</label>
+    <input type="email" id="email-address" class="in" required/>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="first-name" class="mytext">First Name</label>
+    <input type="text" id="first-name" class="in" />
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="last-name" class="mytext">Last Name</label>
+    <input type="text" id="last-name" class="in"/>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="date" class="mytext">Appointment Date</label>
+    <input type="date" id="date" class="in"/>
+  </div>
+  <br><br>
+  <h4>PLEASE CLICK ON THE APPROPRIATE SERVICE AMOUNT TO PAY</h4>
+  <div class="group">
+
+  <div class="form-submit">
+    <button type="submit" id="amount" value="200" class="textSty" onclick="payWithPaystack()"> OCT GH200 </button>
+  </div>
+  <div class="form-submit">
+    <button type="submit"id="amount" value="100" class="textSty" onclick="payWithPaystack()"> VFT GH100 </button>
+  </div>
+  <div class="form-submit">
+    <button type="submit" id="amount" value="50" class="textSty" onclick="payWithPaystack()"> CONSULTATION GH100 </button>
+  </div>
+
+
+  </div>
+  </fieldset>
+</form>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+var paymentForm = document.getElementById('paymentForm');
+paymentForm.addEventListener('submit', payWithPaystack, false);
+function payWithPaystack(e) {
+  e.preventDefault()
+  var handler = PaystackPop.setup({
+    key: 'pk_test_9609d8f0180b3b50089b59c9cec3d6647dbad2cd', // Replace with your public key
+    email: document.getElementById('email-address').value,
+    amount: document.getElementById('amount').value * 100, // the amount value is multiplied by 100 to convert to the lowest currency unit
+    currency: 'GHS', // Use GHS for Ghana Cedis or USD for US Dollars
+    ref: ''+Math.floor((Math.random() * 1000000000) + 1), // Replace with a reference you generated
+    // metadata: {
+    //    custom_fields: [
+    //       {
+    //           display_name: "Mobile Number",
+    //           variable_name: "mobile_number",
+    //           value: "+2348012345678"
+    //       }
+    //    ]
+    // },
+    callback: function(response) {
+      //this happens after the payment is completed successfully
+      var reference = response.reference;
+      alert('Payment complete! Reference: ' + reference);
+    },
+    onClose: function() {
+      alert('window closed.');
+    },
+  });
+  handler.openIframe();
+}
+
+</script>
+
+  </body>
+</html>
